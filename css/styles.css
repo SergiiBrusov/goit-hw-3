@@ -148,7 +148,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
    
-    /* padding-right: 40px; */
+  
     
     
     
@@ -273,7 +273,7 @@ min-width: 169px
 }
 /*Section What are we doing (wawd)*/
 .section-wawd{
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .title-wawd{
     margin-bottom: 72px;
