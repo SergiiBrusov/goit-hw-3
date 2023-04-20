@@ -104,7 +104,7 @@ img {
 }
 
 .header-item{
-    padding: 24px 0;
+    
 }
 
 
@@ -116,6 +116,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    padding: 24px 0;
 }
 .header-adress{
     font-weight: 400;
@@ -133,7 +134,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
    
-    padding-right: 40px;
+    /* padding-right: 40px; */
     
     
     
@@ -148,6 +149,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
     
 }
 
