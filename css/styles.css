@@ -16,6 +16,7 @@
 /* common colors */
 --logo-text-color:#4d5ae5;
 --hover-focus-color:#404bbf;
+--border-color-btn:#E7E9FC;
 
 
 
@@ -66,7 +67,7 @@ img {
 /* Header styles*/
 .header {   
     border-bottom: 1px solid #E7E9FC;
-    padding: 24px 0 24px 0;
+    
 
 }
 .page-header-container{
@@ -97,11 +98,13 @@ img {
 .header-list{
     display: flex;
     align-items: center;
-   
+    gap: 40px;
+   margin-right: 0;
     
 }
-.header-item:not(:last-child){
-    margin-right: 40px;
+
+.header-item{
+    padding: 24px 0;
 }
 
 
@@ -185,7 +188,7 @@ color:var(--hover-focus-color);
     text-align: center;
     color: var(--main-bg-color);
    
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
   
@@ -194,6 +197,7 @@ color:var(--hover-focus-color);
     
 }
 .hero-button {
+    display: block;
     background-color: var(--logo-text-color);
     font-family: var(--primary-font);
     font-weight: 500;
@@ -206,6 +210,8 @@ color:var(--hover-focus-color);
     padding: 16px 32px;
     border-radius: 4px;
 border: none;
+min-width: 169px
+
    
 }
 .hero-button:hover{
@@ -216,6 +222,9 @@ border: none;
     background-color: var(--hover-focus-color);
 }
 /* Section advantages */
+.section-adv{
+    padding: 120px 0;
+}
 .title-adv {
     
 }
@@ -260,6 +269,7 @@ border: none;
 /* Section Our Team */
 .section-team{
     background-color:var(--secondary-bg-cl);
+    
 }
 .team-list{
     display: flex;
@@ -277,11 +287,12 @@ border: none;
 
 }
 .team-cards{
-    margin: 32px 16px ;
+    padding: 32px 16px ;
     
 }
 .item-team{
     background-color: var(--main-bg-color);
+    border-radius: 0px 0px 4px 4px;
 }
 .subtitle-team{
     text-align: center;
@@ -308,7 +319,7 @@ border: none;
     padding: 100px 0;
 }
 .footer-logo {
-    
+    display: inline-block;
     font-family:var(--logo-font) ;
     font-weight: 800;
     font-size: 18px;
@@ -316,13 +327,14 @@ border: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-text-color);
+    margin-bottom: 16px
     
 }
 .logo-foot{
     color: var(--secondary-bg-cl);
 }
 .footer-par{
-    margin-top: 16px;
+    
     color: var(--secondary-bg-cl);
     font-weight: 400;
     font-size: 16px;
@@ -335,7 +347,10 @@ border: none;
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin: 96px 72px;
+    margin-bottom: 72px
+}
+.buttons-section{
+    padding: 96px 0 120px
 }
 
 .btn {
@@ -347,17 +362,19 @@ font-weight: 500;
     color: var(--logo-text-color);
 background-color: var(--secondary-bg-cl);
 cursor: pointer;
-border: none;
+border: 1px solid #e7e9fc;
 border-radius: 4px;
 padding: 12px 24px;
 }
 .btn:hover{
     color: var(--main-bg-color);
     background-color: var(--hover-focus-color);
+    border: 1px solid transparent;
 }
 .btn:focus{
     color: var(--main-bg-color);
     background-color: var(--hover-focus-color);
+    border: 1px solid transparent;
 }
 .title-pic{
     margin-top: 32px;
@@ -389,7 +406,7 @@ padding: 12px 24px;
     
 }
 .image-description{
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-color-btn);
     border-top: none;
-    
+    padding: 32px 16px
 }
